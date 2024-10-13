@@ -1,0 +1,20 @@
+﻿<Window x:Class="Future.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Future"
+        mc:Ignorable="d"
+        Title="Predictor" Height="257" Width="441" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ProgressBar x:Name="progressPredict" Grid.Row="0" Foreground="#FF3BC353"  />
+        <Button x:Name="bPredict" Grid.Row="2" Content="Button" />
+        <GridSplitter Grid.Row="1" ShowsPreview="False" Height="5" HorizontalAlignment="Center"  VerticalAlignment="Stretch" />
+
+    </Grid>
+</Window>
